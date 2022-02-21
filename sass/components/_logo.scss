@@ -5,7 +5,7 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: var(--kegel-7);
 
   .logo__img {
     position: relative;
@@ -19,7 +19,8 @@
   .logo__heading {
     display: inline;
     font-family: Vibur, sans-serif;
-    font-size: 5rem;
-    font-weight: 500;
+    font-size: var(--kegel-15);
+    font-weight: var(--weight-medium);
+    color: var(--oc-gray-8);
   }
 }

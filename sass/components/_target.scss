@@ -2,56 +2,55 @@
 
 // Target
 .w-target {
-  background-color: #f2f2f2;
+  background-color: var(--oc-gray-1);
 }
 
 .target {
+  padding-block: var(--kegel-15);
+
   &__items {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 3rem;
-    gap: 10rem;
+    margin-bottom: var(--kegel-10);
+    gap: var(--space-5);
   }
 
   &__item {
     flex: 1;
-    min-height: 24rem;
+    min-height: var(--space-13);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   &__heading {
-    font-weight: 700;
-    font-size: 2.2rem;
-    line-height: 1.5;
-    color: $color-darkbrown;
-    margin-bottom: 1rem;
+    font-weight: var(--weight-bold);
+    font-size: var(--kegel-8);
+    color: var(--oc-gray-8);
+    margin-bottom: var(--kegel-5);
   }
 
   &__descr {
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: $color-lightbrown;
+    font-size: var(--kegel-5);
+    line-height: var(--line-height-md);
+    color: var(--oc-gray-7);
   }
 
   &__link {
-    font-weight: bold;
-    font-size: 1.6rem;
-    line-height: 1.6;
+    font-weight: var(--weight-bold);
+    font-size: var(--kegel-5);
     text-decoration: none;
-    color: $color-lightbrown;
+    color: var(--oc-gray-8);
   }
 
   &__icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: var(--kegel-15);
+    height: var(--kegel-15);
     border-radius: 40%;
-    margin-bottom: 2rem;
+    margin-bottom: var(--kegel-7);
 
     &--blue {
       background-color: $color-blue;

@@ -2,6 +2,7 @@
 
 //Header
 .header {
+  padding-block: var(--kegel-5);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +10,7 @@
   .logo {
     &__heading {
       @include mq(lg) {
-        font-size: 3.5rem;
+        font-size: var(--kegel-12);
       }
     }
   }
@@ -31,9 +32,9 @@
     display: inline;
     font-family: Vibur, sans-serif;
     font-size: 5rem;
-    line-height: 1.4;
-    font-weight: 500;
-    color: $color-darkbrown;
+    line-height: var(--line-height-sm);
+    font-weight: var(--weight-medium);
+    color: var(--oc-gray-8);
   }
 
   &__tools {

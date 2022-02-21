@@ -5,18 +5,19 @@
 .getapp {
   p {
     font-weight: bold;
-    font-size: 1.4rem;
-    color: #000;
+    font-size: var(--kegel-4);
+    color: var(--oc-gray-8);
+    margin-bottom: var(--kegel-1);
   }
 
   &__buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: var(--kegel-1);
   }
 
   &__button {
-    height: 4rem;
+    height: var(--kegel-13);
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
     &:hover {

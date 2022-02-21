@@ -1,5 +1,14 @@
 @use "../abstracts" as *;
 
+.cards-slider {
+  padding-block: var(--kegel-15);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--kegel-8) var(--kegel-10);
+}
 
 .card {
   position: relative;
@@ -9,10 +18,11 @@
   padding: 5rem 3rem 3rem;
 
   &__title {
-    font-weight: 800;
-    font-size: 3.6rem;
-    line-height: 1.2;
+    font-weight: var(--weight-bold);
+    font-size: var(--kegel-11);
     width: 65%;
+    margin-bottom: var(--kegel-9);
+
     &--new {
       &::before {
         position: absolute;
@@ -31,14 +41,21 @@
       }
     }
   }
+
+  &__descr {
+    margin-bottom: var(--kegel-9);
+  }
+
   &__descr,
   &__link {
     font-size: 2rem;
     line-height: 1.2;
     width: 65%;
+    color: var(--oc-white);
   }
   &__link {
     font-weight: bold;
+    text-decoration: none;
   }
 
   transition: transform 0.3s ease;

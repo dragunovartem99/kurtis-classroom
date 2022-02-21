@@ -11,13 +11,17 @@ html {
   }
 }
 
+body {
+  color: var(--oc-gray-7);
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
-  color: $color-darkbrown;
+  font-weight: var(--weight-bold);
+  color: var(--oc-gray-8);
 }
 
 h4 {
@@ -25,18 +29,19 @@ h4 {
 }
 
 .headline {
-  font-weight: 800;
   font-size: 7.4rem;
   line-height: 1.35;
   color: $color-darkbrown;
 }
 
 .subtitle {
-  font-size: 3.6rem;
-  font-weight: 900;
+  font-size: var(--kegel-12);
+  font-weight: var(--weight-bold);
+  text-align: center;
 }
 
 .subtitle--dash {
+  margin-bottom: var(--space-1);
   &::after {
     content: "";
     display: block;
