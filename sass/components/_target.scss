@@ -1,17 +1,17 @@
 @use "../abstracts" as *;
 
 // Target
-.w-target {
+.target-w {
   background-color: var(--oc-gray-1);
 }
 
 .target {
-  padding-block: var(--kegel-15);
+  padding-block: var(--space-1);
 
   &__items {
     display: flex;
     justify-content: space-around;
-    margin-bottom: var(--kegel-10);
+    margin-bottom: var(--kegel-15);
     gap: var(--space-5);
   }
 
@@ -24,7 +24,7 @@
   }
 
   &__heading {
-    font-weight: var(--weight-bold);
+    font-weight: var(--weight-7);
     font-size: var(--kegel-8);
     color: var(--oc-gray-8);
     margin-bottom: var(--kegel-5);
@@ -32,12 +32,12 @@
 
   &__descr {
     font-size: var(--kegel-5);
-    line-height: var(--line-height-md);
+    line-height: var(--height-7);
     color: var(--oc-gray-7);
   }
 
   &__link {
-    font-weight: var(--weight-bold);
+    font-weight: var(--weight-7);
     font-size: var(--kegel-5);
     text-decoration: none;
     color: var(--oc-gray-8);
@@ -66,6 +66,13 @@
 
     &--gold {
       background-color: $color-gold;
+    }
+  }
+
+  &__btn {
+    text-align: center;
+    .btn {
+      text-transform: uppercase;
     }
   }
 }

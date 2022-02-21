@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
@@ -91,8 +91,8 @@
       </div>
     </section>
 
-    <section class="w-target">
-      <div class="target container mx-auto">
+    <section class="target-w">
+      <div class="target container">
         <h3 class="subtitle subtitle--dash">Who is Kurtis for?</h3>
         <div class="target__items">
           <div class="target__item">
@@ -150,7 +150,9 @@
             <a class="target__link" href="#more_kids">Learn more</a>
           </div>
         </div>
-        <a href="#signup" class="btn btn--blue btn--big"> Sign Up Now </a>
+        <div class="target__btn">
+          <a href="#signup" class="btn btn--blue btn--big"> Sign Up Now </a>
+        </div>
       </div>
     </section>
 
@@ -188,36 +190,34 @@
       </div>
     </section>
 
-    <!-- 
-    <section class="game-section">
-      <div class="game-title container">
+    <section class="game">
+      <header class="game__header container">
         <h3 class="subtitle">Do you have a game code?</h3>
         <p>Let's play for a while!</p>
-      </div>
-      <div class="w-game">
-        <div class="game container">
-          <div class="game__content">
-            <div class="logo game__logo">
-              <img
-                src="img/game/logo-white.png"
-                alt="Kurtis Logo Icon"
-                class="logo__img"
-              />
-              <div class="logo__heading">Kurtis Classroom</div>
-            </div>
-            <a class="btn" href="#play_game"> Write the code here &rarr; </a>
-            <a class="game__try" href="#try-game">Or try with 1234</a>
+      </header>
+      <div class="game-w">
+        <div class="game__content">
+          <div class="logo game__logo">
+            <img
+              src="img/game/logo-white.png"
+              alt="Kurtis Logo Icon"
+              class="logo__img"
+            />
+            <div class="logo__heading">Kurtis Classroom</div>
           </div>
+          <a class="btn" href="#play_game"> Write the code here &rarr; </a>
+          <a class="game__try" href="#try-game">Or try with 1234</a>
         </div>
       </div>
-      <div class="game-more container">
+
+      <footer class="game__footer container">
         <p>Still more?</p>
         <a href="#more_games">Take a look to our features games</a>
-      </div>
+      </footer>
     </section>
 
     <section class="features container">
-      <div class="feature justify-end">
+      <div class="feature">
         <img
           src="img/features/abstract-monster.png"
           alt="Abstract Monster"
@@ -231,7 +231,7 @@
           </p>
         </div>
       </div>
-      <div class="feature justify-start">
+      <div class="feature">
         <img
           src="img/features/character-holds-lightning.png"
           alt="Character Holds Lightning"
@@ -245,7 +245,7 @@
           </p>
         </div>
       </div>
-      <div class="feature justify-end">
+      <div class="feature">
         <img
           src="img/features/hand-and-color.png"
           alt="Hand And Color"
@@ -261,11 +261,11 @@
       </div>
     </section>
 
-    <div class="w-testimonial">
+    <div class="testimonial-w">
       <section class="testimonial container">
         <h3 class="subtitle subtitle--dash">Our best customers</h3>
-        <div class="">
-          <div class="">
+        <div class="testimonial__layout">
+          <div class="testimonial__graphics">
             <div class="testimonial__quote">I love these games!</div>
             <img
               src="img/testimonial/martha.jpeg"
@@ -286,7 +286,12 @@
                 dolore amet beatae quasi aliquam.
               </p>
             </div>
-            <img src="img/testimonial/Norwegian.png" alt="Norwegian Air Logo" />
+            <div class="testimonial__logo">
+              <img
+                src="img/testimonial/Norwegian.png"
+                alt="Norwegian Air Logo"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -314,7 +319,7 @@
       </div>
     </section>
 
-    <div class="w-footer">
+    <div class="footer-w">
       <footer class="footer container">
         <section class="footer__main">
           <figure class="footer__logo logo">
@@ -431,6 +436,6 @@
           </div>
         </section>
       </footer>
-    </div> -->
+    </div>
   </body>
 </html>

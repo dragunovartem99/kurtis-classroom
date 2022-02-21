@@ -1,14 +1,26 @@
 @use "../abstracts" as *;
 
+.game-w {
+  background-color: $color-gold;
+}
 
-//Game more
-.game-more {
+.game__header {
   text-align: center;
-  min-height: 150px;
+  font-size: var(--kegel-9);
+  font-weight: var(--weight-medium);
+
+  .subtitle {
+    margin-bottom: var(--kegel-5);
+  }
+}
+
+.game__footer {
+  text-align: center;
+  font-size: var(--kegel-12);
 
   p {
     display: inline;
-    margin-right: 10px;
+    margin-right: 0.5rem;
   }
 
   a:link,
@@ -26,47 +38,25 @@
   }
 }
 
-.game-more p,
-.game-more a {
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: right;
-  color: #333333;
-}
-
-// Game title
-.game-title {
-  text-align: center;
-
-  p {
-    font-weight: 500;
-    font-size: 2.4rem;
-    line-height: 1.1;
-    color: $color-lightbrown;
-  }
-}
-
 // Game
-.w-game {
-  background-color: $color-gold;
-}
 
 .game {
-  min-height: 750px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: var(--kegel-11);
+  margin-bottom: var(--kegel-15);
 
-  &__logo {
+  &__logo .logo__heading {
     color: $color-white;
   }
 
   &__content {
-    max-width: 40%;
-    text-align: center;
-    padding: 260px 0;
-
+    padding-block: var(--space-10);
+    gap: var(--kegel-5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .btn {
       &:link,
       &:visited {
@@ -102,9 +92,8 @@
   &__try {
     display: block;
     font-family: Montserrat;
-    font-size: 2rem;
-    line-height: 1.2;
-    color: $color-lightgrey;
+    font-size: var(--kegel-7);
+    color: var(--oc-gray-6);
     text-align: center;
     text-decoration: none;
 

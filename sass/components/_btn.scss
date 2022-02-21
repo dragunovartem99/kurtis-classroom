@@ -1,9 +1,10 @@
 @use "../abstracts" as *;
 
 .btn {
+  font-weight: var(--weight-7);
   display: inline-block;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: var(--kegel-5);
   text-decoration: none;
   border-radius: 0.5rem;
   box-shadow: inset 0px -4px 1px rgba(0, 0, 0, 0.6);
@@ -12,14 +13,11 @@
 }
 
 .btn--big {
-  padding: 20px 60px;
-  line-height: 1.5;
-  font-weight: 600;
+  padding: var(--kegel-7) var(--kegel-15);
 }
 
 .btn--small {
-  padding: 1.5rem 3rem;
-  font-weight: 600;
+  padding: var(--kegel-5) var(--kegel-11);
 }
 
 .btn--white {
@@ -27,7 +25,7 @@
   &:visited {
     background-color: $color-white;
     color: $color-lightgrey;
-    border: 2px solid $color-lightgrey;
+    border: 0.2rem solid $color-lightgrey;
     box-shadow: none;
     transition: none;
   }
@@ -49,8 +47,8 @@
   &:hover,
   &:active {
     background-color: $color-gold;
-    color: $color-white;
-    border: none;
+    color: var(--oc-white);
+    border-color: var(--oc-white);
     box-shadow: inset 0px -4px 1px rgba(0, 0, 0, 0.6);
   }
 }

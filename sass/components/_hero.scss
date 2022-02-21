@@ -2,7 +2,7 @@
 
 //Hero
 .hero {
-  padding-block: var(--kegel-15);
+  padding-block: var(--space-4);
   @include mq(md) {
     padding-block: var(--kegel-10);
   }
@@ -22,7 +22,7 @@
 
   &__text {
     font-size: var(--kegel-8);
-    color: $color-lightbrown;
+    color: var(--oc-gray-7);
     margin-bottom: var(--kegel-10);
     @include mq(md) {
       font-size: var(--kegel-5);
@@ -30,7 +30,7 @@
   }
 
   .btn {
-    margin-bottom: var(--kegel-9);
+    margin-bottom: var(--kegel-15);
   }
 
   &__content {

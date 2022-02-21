@@ -1,12 +1,32 @@
 @use "../abstracts" as *;
 
-
 //Features
+
+.features {
+  padding-block: var(--space-4);
+}
 
 .feature {
   display: flex;
   min-height: 45rem;
   position: relative;
+
+  .subtitle {
+    text-align: left;
+  }
+
+  &:nth-child(odd) {
+    justify-content: end;
+    .feature__img {
+      left: 0;
+    }
+  }
+
+  &:nth-child(even) {
+    .feature__img {
+      right: 0;
+    }
+  }
 
   &__img {
     position: absolute;
@@ -20,13 +40,12 @@
   }
 
   &__descr {
-    font-weight: 500;
-    font-size: 2.8rem;
-    line-height: 1.43;
-    color: $color-lightbrown;
+    font-weight: var(--weight-5);
+    font-size: var(--kegel-9);
+    line-height: var(--height-5);
   }
 
   .subtitle {
-    margin-bottom: 2rem;
+    margin-bottom: var(--kegel-8);
   }
 }

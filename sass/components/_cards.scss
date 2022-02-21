@@ -1,27 +1,32 @@
 @use "../abstracts" as *;
 
 .cards-slider {
-  padding-block: var(--kegel-15);
+  padding-block: var(--space-1);
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--kegel-8) var(--kegel-10);
+  gap: var(--kegel-6) var(--kegel-1);
+  justify-items: center;
+  grid-auto-rows: 1fr;
 }
 
 .card {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--kegel-5);
+  flex-direction: column;
+  width: 80%;
   position: relative;
-  flex: 0 0 45%;
   border-radius: 3rem;
   color: $color-white;
   padding: 5rem 3rem 3rem;
 
   &__title {
-    font-weight: var(--weight-bold);
-    font-size: var(--kegel-11);
+    font-weight: var(--weight-8);
+    font-size: var(--kegel-9);
     width: 65%;
-    margin-bottom: var(--kegel-9);
 
     &--new {
       &::before {
@@ -35,26 +40,24 @@
         background-color: $color-black;
         padding: 0.5rem 1rem;
         max-width: 8.5rem;
-        font-weight: bold;
-        font-size: 1.4rem;
-        line-height: 1.2;
+        font-weight: var(--weight-bold);
+        font-size: var(--kegel-3);
       }
     }
   }
 
   &__descr {
-    margin-bottom: var(--kegel-9);
   }
 
   &__descr,
   &__link {
-    font-size: 2rem;
+    font-size: var(--kegel-5);
     line-height: 1.2;
     width: 65%;
     color: var(--oc-white);
   }
   &__link {
-    font-weight: bold;
+    font-weight: var(--weight-7);
     text-decoration: none;
   }
 
@@ -130,8 +133,8 @@
 
 .card__img {
   position: absolute;
-  width: 20rem;
-  top: 5rem;
-  right: 3rem;
-  transform: rotate(20deg);
+  width: var(--space-8);
+  top: 0;
+  right: 0;
+  transform: rotate(20deg) translate(-1rem, 3rem);
 }

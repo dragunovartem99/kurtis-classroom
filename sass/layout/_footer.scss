@@ -1,20 +1,21 @@
 @use "../abstracts" as *;
 
-
 // Footer
 
-.w-footer {
+.footer-w {
   background-color: $color-blue;
 }
 
 .footer {
+  padding-block: var(--space-1);
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: var(--kegel-11);
 
   &__logo {
     position: relative;
     top: -0.8rem;
+    margin-bottom: var(--kegel-12);
 
     .logo__img {
       width: 3rem;
@@ -22,7 +23,7 @@
 
     .logo__heading {
       color: #fff;
-      font-size: 3rem;
+      font-size: var(--kegel-10);
     }
   }
 
@@ -31,6 +32,7 @@
   }
 
   .getapp {
+    margin-bottom: var(--kegel-15);
     &__text {
       color: $color-white;
     }
@@ -44,17 +46,20 @@
     font-weight: bold;
     font-size: 2rem;
     line-height: 1.5;
-    margin-bottom: 2rem;
+    margin-bottom: var(--kegel-15);
     color: $color-white;
   }
 
   .footer__nav {
     display: flex;
     flex-direction: column;
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 2.2;
-    color: $color-white;
+    gap: var(--kegel-7);
+
+    a {
+      font-size: var(--kegel-5);
+      color: var(--oc-white);
+      text-decoration: none;
+    }
 
     > *:hover {
       text-decoration: underline;

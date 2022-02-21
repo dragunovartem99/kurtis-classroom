@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-extrabold);
   color: var(--oc-gray-8);
 }
 
@@ -29,14 +29,15 @@ h4 {
 }
 
 .headline {
-  font-size: 7.4rem;
-  line-height: 1.35;
-  color: $color-darkbrown;
+  font-weight: var(--weight-8);
+  font-size: var(--space-2);
+  line-height: var(--height-3);
+  color: var(--oc-gray-9);
 }
 
 .subtitle {
   font-size: var(--kegel-12);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-8);
   text-align: center;
 }
 
@@ -45,11 +46,11 @@ h4 {
   &::after {
     content: "";
     display: block;
-    background-color: #3a5aff;
-    width: 11.5rem;
+    background-color: $color-blue;
+    width: var(--space-6);
     height: 0.8rem;
     margin: 0 auto;
     position: relative;
-    top: 10px;
+    top: var(--kegel-1);
   }
 }

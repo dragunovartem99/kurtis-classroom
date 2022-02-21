@@ -2,15 +2,16 @@
 
 // Info
 .info {
+  padding-block: var(--space-1);
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: var(--kegel-9);
 
   .info__item {
     flex: 1;
-    font-weight: 800;
-    font-size: 1.6rem;
-    color: #333;
+    font-weight: var(--weight-8);
+    font-size: var(--kegel-5);
+    color: var(--oc-gray-8);
     padding: 0.3px 0px 0.3px 5px;
     border-left-width: 4px;
     border-left-style: solid;

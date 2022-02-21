@@ -1,21 +1,21 @@
 @use "../abstracts" as *;
 
-
 // Social
 
 .social {
   &__text {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: var(--kegel-4);
     color: $color-black;
+    margin-bottom: var(--kegel-4);
   }
 
   &__buttons {
     display: flex;
-    gap: 1rem;
+    gap: var(--kegel-1);
 
     img {
-      width: 2rem;
+      width: var(--kegel-7);
     }
   }
   &__button {
@@ -23,8 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: var(--kegel-13);
+    height: var(--kegel-13);
     border-radius: 50%;
 
     transition: transform 0.3s ease;
