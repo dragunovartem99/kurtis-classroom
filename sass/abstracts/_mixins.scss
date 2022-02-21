@@ -1,0 +1,7 @@
+@mixin hover-effect {
+  transition: transform 0.3s ease-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+//Hero
+.hero {
+  padding: 5rem 0;
+  @include mq(md) {
+    padding: 2rem 0;
+  }
+
+  display: flex;
+  @include mq(md) {
+    flex-direction: column;
+  }
+
+  .headline {
+    margin-bottom: 5rem;
+    @include mq(md) {
+      margin-bottom: 3rem;
+      font-size: 3.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 2.4rem;
+    color: $color-lightbrown;
+    margin-bottom: 3rem;
+    @include mq(md) {
+      font-size: 1.6rem;
+    }
+  }
+
+  .btn {
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    flex: 0 50%;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .getapp {
+    @include mq(md) {
+      margin-bottom: 3rem;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@use "../abstracts" as *;
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: inset 0px -4px 1px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.2s ease-out, color 0.2s ease-out,
+    border 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.btn--big {
+  padding: 20px 60px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.btn--small {
+  padding: 1.5rem 3rem;
+  font-weight: 600;
+}
+
+.btn--white {
+  &:link,
+  &:visited {
+    background-color: $color-white;
+    color: $color-lightgrey;
+    border: 2px solid $color-lightgrey;
+    box-shadow: none;
+    transition: none;
+  }
+
+  @extend %btn-hover;
+}
+
+.btn--blue {
+  &:link,
+  &:visited {
+    background-color: $color-blue;
+    color: $color-white;
+  }
+
+  @extend %btn-hover;
+}
+
+%btn-hover {
+  &:hover,
+  &:active {
+    background-color: $color-gold;
+    color: $color-white;
+    border: none;
+    box-shadow: inset 0px -4px 1px rgba(0, 0, 0, 0.6);
+  }
+}

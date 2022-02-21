@@ -1,0 +1,63 @@
+@use "../abstracts" as *;
+
+
+// Footer
+
+.w-footer {
+  background-color: $color-blue;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+
+  &__logo {
+    position: relative;
+    top: -0.8rem;
+
+    .logo__img {
+      width: 3rem;
+    }
+
+    .logo__heading {
+      color: #fff;
+      font-size: 3rem;
+    }
+  }
+
+  &__main {
+    flex: 0 0 30rem;
+  }
+
+  .getapp {
+    &__text {
+      color: $color-white;
+    }
+  }
+
+  .social__text {
+    color: $color-white;
+  }
+
+  .footer__heading {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: $color-white;
+  }
+
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.2;
+    color: $color-white;
+
+    > *:hover {
+      text-decoration: underline;
+    }
+  }
+}

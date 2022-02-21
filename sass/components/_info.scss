@@ -1,0 +1,57 @@
+@use "../abstracts" as *;
+
+// Info
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+
+  .info__item {
+    flex: 1;
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: #333;
+    padding: 0.3px 0px 0.3px 5px;
+    border-left-width: 4px;
+    border-left-style: solid;
+    transition: background-color ease-out 0.4s, color ease-out 0.4s,
+      transform 0.4s 0.3s;
+
+    &:hover {
+      color: $color-white;
+      transform: scale(115%);
+    }
+
+    &--blue {
+      border-left-color: $color-blue;
+
+      &:hover {
+        background-color: $color-blue;
+      }
+    }
+
+    &--gold {
+      border-left-color: $color-gold;
+
+      &:hover {
+        background-color: $color-gold;
+      }
+    }
+
+    &--lightblue {
+      border-left-color: $color-lightblue;
+
+      &:hover {
+        background-color: $color-lightblue;
+      }
+    }
+
+    &--red {
+      border-left-color: $color-red;
+
+      &:hover {
+        background-color: $color-red;
+      }
+    }
+  }
+}

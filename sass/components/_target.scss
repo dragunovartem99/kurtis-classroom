@@ -1,0 +1,72 @@
+@use "../abstracts" as *;
+
+// Target
+.w-target {
+  background-color: #f2f2f2;
+}
+
+.target {
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    gap: 10rem;
+  }
+
+  &__item {
+    flex: 1;
+    min-height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: $color-darkbrown;
+    margin-bottom: 1rem;
+  }
+
+  &__descr {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: $color-lightbrown;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-decoration: none;
+    color: $color-lightbrown;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 40%;
+    margin-bottom: 2rem;
+
+    &--blue {
+      background-color: $color-blue;
+    }
+
+    &--lightblue {
+      background-color: $color-lightblue;
+    }
+
+    &--red {
+      background-color: $color-red;
+    }
+
+    &--gold {
+      background-color: $color-gold;
+    }
+  }
+}

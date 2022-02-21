@@ -1,0 +1,116 @@
+@use "../abstracts" as *;
+
+
+//Game more
+.game-more {
+  text-align: center;
+  min-height: 150px;
+
+  p {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  a:link,
+  a:visited {
+    font-weight: bold;
+    text-decoration-line: underline;
+    /* $primary */
+    color: $color-blue;
+    transition: color ease-out 0.2s;
+  }
+
+  a:hover,
+  a:active {
+    color: $color-gold;
+  }
+}
+
+.game-more p,
+.game-more a {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: right;
+  color: #333333;
+}
+
+// Game title
+.game-title {
+  text-align: center;
+
+  p {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1.1;
+    color: $color-lightbrown;
+  }
+}
+
+// Game
+.w-game {
+  background-color: $color-gold;
+}
+
+.game {
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__logo {
+    color: $color-white;
+  }
+
+  &__content {
+    max-width: 40%;
+    text-align: center;
+    padding: 260px 0;
+
+    .btn {
+      &:link,
+      &:visited {
+        width: 372px;
+        height: 73px;
+        background-color: $color-white;
+        padding: 20px;
+        /* letter-spacing: -0.3px; */
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: $color-lightgrey;
+        box-shadow: none;
+        border-radius: 3em;
+        transition: none;
+      }
+
+      &:hover,
+      &:active {
+        font-family: monospace;
+        letter-spacing: -1.7px;
+        color: #ffc43b;
+        text-decoration: none;
+        background-color: $color-darkbrown;
+        border: none;
+        box-shadow: inset 0px -4px 1px rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  &__try {
+    display: block;
+    font-family: Montserrat;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: $color-lightgrey;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      color: #333333;
+      font-weight: 600;
+    }
+  }
+}

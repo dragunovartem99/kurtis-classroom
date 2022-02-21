@@ -1,0 +1,88 @@
+@use "../abstracts" as *;
+
+.w-testimonial {
+  background-color: $color-blue;
+}
+
+.testimonial {
+  color: $color-white;
+
+  .subtitle {
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &__img {
+    border-radius: 50%;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  &__quote {
+    position: absolute;
+    top: 0;
+    right: 16rem;
+    padding: 2rem 0;
+    min-width: 40rem;
+    z-index: 1;
+
+    border-radius: 3rem;
+    background-color: $color-white;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    text-align: center;
+
+    color: #2f281e;
+
+    &::before {
+      content: "";
+      display: block;
+      background-color: $color-white;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -1.25rem;
+      right: 15%;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: $color-white;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -3.5rem;
+      right: 10%;
+    }
+  }
+
+  &__text {
+    padding-left: 5rem;
+    border-left: 0.1rem $color-white solid;
+  }
+
+  &__author {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  &__bio {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}

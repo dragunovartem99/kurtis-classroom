@@ -1,0 +1,13 @@
+{
+  "name": "kurtis-classroom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "sass --watch sass/style.scss:css/style.css"
+  },
+  "author": "dragunovartem99",
+  "license": "ISC"
+}

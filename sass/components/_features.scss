@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+
+//Features
+
+.feature {
+  display: flex;
+  min-height: 45rem;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    max-width: 40rem;
+  }
+
+  &__content {
+    flex: 0 55%;
+  }
+
+  &__descr {
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 1.43;
+    color: $color-lightbrown;
+  }
+
+  .subtitle {
+    margin-bottom: 2rem;
+  }
+}

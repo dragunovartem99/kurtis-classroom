@@ -1,0 +1,50 @@
+@use "../abstracts" as *;
+
+html {
+  font-size: 62.5%;
+  @include mq(lg) {
+    font-size: 60%;
+  }
+
+  @include mq(sm) {
+    font-size: 56.25%;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  color: $color-darkbrown;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+.headline {
+  font-weight: 800;
+  font-size: 7.4rem;
+  line-height: 1.35;
+  color: $color-darkbrown;
+}
+
+.subtitle {
+  font-size: 3.6rem;
+  font-weight: 900;
+}
+
+.subtitle--dash {
+  &::after {
+    content: "";
+    display: block;
+    background-color: #3a5aff;
+    width: 11.5rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+  }
+}

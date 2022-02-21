@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+// Logo
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .logo__img {
+    position: relative;
+    top: -0.5rem;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .logo__heading {
+    display: inline;
+    font-family: Vibur, sans-serif;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+}
