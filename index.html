@@ -21,8 +21,8 @@
   </head>
 
   <body>
-    <header class="header container">
-      <div class="logo">
+    <header class="header">
+      <div class="header__logo logo">
         <a href="#">
           <img
             src="img/main-header/logo.png"
@@ -32,7 +32,22 @@
         </a>
         <h1 class="logo__heading">Kurtis Classroom</h1>
       </div>
-      <div class="header__tools">
+      <button class="header__burger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+      <div class="header__buttons">
         <select name="page-lang" id="lang" class="header__lang">
           <option value="en">EN</option>
           <option value="ru">RU</option>
@@ -41,12 +56,6 @@
         </select>
         <a class="btn btn--blue btn--small" href="#signup">Sign up</a>
         <a class="btn btn--white btn--small" href="#login">Log in</a>
-        <button class="header__burger">
-          <img
-            src="img/main-header/nav-burger.png"
-            alt="Dropdown Burger Icon"
-          />
-        </button>
       </div>
     </header>
 
@@ -56,7 +65,7 @@
         <p class="hero__text">
           Any subject, in any language, on any device, for all ages!
         </p>
-        <a class="btn btn--blue btn--big" href="#signup"> Sign up for free </a>
+        <a class="btn btn--blue btn--big" href="#signup">Sign up for free</a>
 
         <figure class="getapp">
           <p>Or download the app:</p>
@@ -100,7 +109,7 @@
               <div class="target__icon target__icon--blue">
                 <img src="img/target/open-book.png" alt="Open Book Icon" />
               </div>
-              <h4 class="target__heading">At school</h4>
+              <h4 class="target__title">At school</h4>
               <p class="target__descr">
                 Engaging group and distance learning for teachers and students.
               </p>
@@ -116,7 +125,7 @@
                   alt="Board and Pencil Icon"
                 />
               </div>
-              <h4 class="target__heading">At work</h4>
+              <h4 class="target__title">At work</h4>
               <p class="target__descr">
                 For training, e-learning, interactive presentations and more.
               </p>
@@ -129,7 +138,7 @@
               <div class="target__icon target__icon--lightblue">
                 <img src="img/target/sofa.png" alt="Sofa Icon" />
               </div>
-              <h4 class="target__heading">At home</h4>
+              <h4 class="target__title">At home</h4>
               <p class="target__descr">
                 Apps and games for family fun or home study.
               </p>
@@ -142,7 +151,7 @@
               <div class="target__icon target__icon--red">
                 <img src="img/target/smartphone.png" alt="Smartphone Icon" />
               </div>
-              <h4 class="target__heading">Learning apps</h4>
+              <h4 class="target__title">Learning apps</h4>
               <p class="target__descr">
                 Engage kids with the Kahoot! family of learning apps
               </p>
@@ -156,7 +165,7 @@
       </div>
     </section>
 
-    <section class="cards-slider container">
+    <section class="section-cards container">
       <h3 class="subtitle subtitle--dash">Amazing things are happening</h3>
       <div class="cards">
         <div class="card card--pencils">
@@ -297,17 +306,17 @@
       </section>
     </div>
 
-    <figure class="info container">
-      <div class="info__item info__item--blue">
+    <figure class="stats container">
+      <div class="stats__item stats__item--blue">
         More than 50% of US teachers use Kurtis
       </div>
-      <div class="info__item info__item--lightblue">
+      <div class="stats__item stats__item--lightblue">
         Players in more than 200 countries
       </div>
-      <div class="info__item info__item--red">
+      <div class="stats__item stats__item--red">
         Over 30 million public games available
       </div>
-      <div class="info__item info__item--gold">
+      <div class="stats__item stats__item--gold">
         97% of the Fortune 500 use Kurtis
       </div>
     </figure>

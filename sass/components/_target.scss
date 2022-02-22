@@ -13,6 +13,9 @@
     justify-content: space-around;
     margin-bottom: var(--kegel-15);
     gap: var(--space-5);
+    @include mq(md) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -23,7 +26,7 @@
     justify-content: space-between;
   }
 
-  &__heading {
+  &__title {
     font-weight: var(--weight-7);
     font-size: var(--kegel-8);
     color: var(--oc-gray-8);

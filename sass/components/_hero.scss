@@ -5,11 +5,27 @@
   padding-block: var(--space-4);
   @include mq(md) {
     padding-block: var(--kegel-10);
+    text-align: center;
   }
 
   display: flex;
   @include mq(md) {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  &__content {
+    flex: 0 50%;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+    @include mq(md) {
+      max-width: 40rem;
+      margin-inline: auto;
+      margin-bottom: var(--kegel-5);
+    }
   }
 
   .headline {
@@ -33,19 +49,11 @@
     margin-bottom: var(--kegel-15);
   }
 
-  &__content {
-    flex: 0 50%;
-  }
-
-  &__img {
-    img {
-      width: 100%;
-    }
-  }
-
   .getapp {
     @include mq(md) {
-      margin-bottom: var(--kegel-10);
+      &__buttons {
+        justify-content: center;
+      }
     }
   }
 }

@@ -11,6 +11,9 @@
   display: flex;
   justify-content: space-between;
   gap: var(--kegel-11);
+  @include mq(md) {
+    flex-direction: column;
+  }
 
   &__logo {
     position: relative;
@@ -29,6 +32,9 @@
 
   &__main {
     flex: 0 0 30rem;
+    @include mq(md) {
+      order: 1;
+    }
   }
 
   .getapp {
@@ -48,15 +54,22 @@
     line-height: 1.5;
     margin-bottom: var(--kegel-15);
     color: $color-white;
+    @include mq(md) {
+      margin-bottom: var(--kegel-5);
+    }
   }
 
   .footer__nav {
     display: flex;
     flex-direction: column;
     gap: var(--kegel-7);
+    @include mq(md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
     a {
-      font-size: var(--kegel-5);
+      font-size: var(--kegel-4);
       color: var(--oc-white);
       text-decoration: none;
     }

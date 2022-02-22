@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-.cards-slider {
+.section-cards {
   padding-block: var(--space-1);
 }
 
@@ -10,6 +10,9 @@
   gap: var(--kegel-6) var(--kegel-1);
   justify-items: center;
   grid-auto-rows: 1fr;
+  @include mq(md) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {

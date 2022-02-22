@@ -1,13 +1,16 @@
 @use "../abstracts" as *;
 
-// Info
-.info {
+// stats
+.stats {
   padding-block: var(--space-1);
   display: flex;
   justify-content: space-between;
   gap: var(--kegel-9);
+  @include mq(md) {
+    flex-direction: column;
+  }
 
-  .info__item {
+  .stats__item {
     flex: 1;
     font-weight: var(--weight-8);
     font-size: var(--kegel-5);

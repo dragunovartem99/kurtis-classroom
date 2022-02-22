@@ -15,19 +15,6 @@ body {
   color: var(--oc-gray-7);
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: var(--weight-extrabold);
-  color: var(--oc-gray-8);
-}
-
-h4 {
-  font-size: 36px;
-}
-
 .headline {
   font-weight: var(--weight-8);
   font-size: var(--space-2);
@@ -39,6 +26,7 @@ h4 {
   font-size: var(--kegel-12);
   font-weight: var(--weight-8);
   text-align: center;
+  color: var(--oc-gray-8);
 }
 
 .subtitle--dash {
@@ -49,7 +37,7 @@ h4 {
     background-color: $color-blue;
     width: var(--space-6);
     height: 0.8rem;
-    margin: 0 auto;
+    margin-inline: auto;
     position: relative;
     top: var(--kegel-1);
   }

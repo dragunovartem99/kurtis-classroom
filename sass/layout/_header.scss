@@ -2,54 +2,61 @@
 
 //Header
 .header {
-  padding-block: var(--kegel-5);
+  max-width: 120rem;
+  margin-inline: auto;
+  padding-block: var(--kegel-8);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  .logo {
-    &__heading {
-      @include mq(lg) {
-        font-size: var(--kegel-12);
-      }
-    }
-  }
+  gap: var(--kegel-7);
+  flex-wrap: wrap;
 
   @include mq(md) {
-    flex-direction: column;
-  }
-
-  &__burger {
-    transition: transform 0.3s ease;
-    border: none;
-    background-color: transparent;
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-
-  &__heading {
-    display: inline;
-    font-family: Vibur, sans-serif;
-    font-size: 5rem;
-    line-height: var(--line-height-sm);
-    font-weight: var(--weight-medium);
-    color: var(--oc-gray-8);
-  }
-
-  &__tools {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+  }
+
+  &__logo {
+    @include mq(lg) {
+      font-size: var(--kegel-12);
+    }
   }
 
   &__lang {
+    margin-left: auto;
     cursor: pointer;
-    font-size: 2.2rem;
+    font-size: var(--kegel-9);
     border: none;
     background-color: $color-white;
     font-family: inherit;
     outline: none;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: var(--kegel-7);
+    justify-content: space-between;
+
+    margin-left: auto;
+    @include mq(md) {
+      margin-left: 0;
+      flex: 1;
+    }
+  }
+
+  &__burger {
+    order: 1;
+    width: var(--kegel-15);
+    height: var(--kegel-15);
+    transition: transform 0.3s ease, color 0.3s ease;
+    border: none;
+    background-color: transparent;
+    color: $color-blue;
+    &:hover {
+      transform: scale(1.3);
+      cursor: pointer;
+      color: $color-gold;
+    }
+    @include mq(md) {
+      order: 0;
+    }
   }
 }
