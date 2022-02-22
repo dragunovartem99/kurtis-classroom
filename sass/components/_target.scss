@@ -15,15 +15,23 @@
     gap: var(--space-5);
     @include mq(md) {
       flex-direction: column;
+      gap: var(--kegel-15);
     }
   }
 
   &__item {
     flex: 1;
-    min-height: var(--space-13);
+    gap: var(--kegel-5);
+    min-height: var(--space-14);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include mq(md) {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      min-height: 0;
+      align-items: center;
+    }
   }
 
   &__title {
@@ -31,12 +39,18 @@
     font-size: var(--kegel-8);
     color: var(--oc-gray-8);
     margin-bottom: var(--kegel-5);
+    @include mq(md) {
+      margin-bottom: 0;
+    }
   }
 
   &__descr {
     font-size: var(--kegel-5);
     line-height: var(--height-7);
     color: var(--oc-gray-7);
+    @include mq(md) {
+      grid-column: span 2;
+    }
   }
 
   &__link {
@@ -44,6 +58,10 @@
     font-size: var(--kegel-5);
     text-decoration: none;
     color: var(--oc-gray-8);
+    margin-top: auto;
+    @include mq(md) {
+      grid-column: span 2;
+    }
   }
 
   &__icon {
@@ -54,6 +72,11 @@
     height: var(--kegel-15);
     border-radius: 40%;
     margin-bottom: var(--kegel-7);
+    @include mq(md) {
+      width: var(--space-1);
+      height: var(--space-1);
+      margin-bottom: 0;
+    }
 
     &--blue {
       background-color: $color-blue;
