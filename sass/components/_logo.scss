@@ -7,20 +7,30 @@
   align-items: center;
   gap: var(--kegel-7);
 
+  @include mq(sm) {
+    gap: var(--kegel-4);
+  }
+
   &__img {
-    position: relative;
-    top: -0.5rem;
-    transition: transform 0.3s ease;
-    &:hover {
-      transform: scale(1.05);
+    transform: translateY(-0.5rem);
+    width: var(--kegel-14);
+    height: var(--kegel-14);
+
+    @include mq(sm) {
+      width: var(--kegel-12);
+      height: var(--kegel-12);
     }
   }
 
   &__heading {
     display: inline;
     font-family: Vibur, sans-serif;
-    font-size: var(--kegel-15);
-    font-weight: var(--weight-medium);
+    font-weight: var(--weight-5);
     color: var(--oc-gray-8);
+    font-size: var(--kegel-14);
+
+    @include mq(sm) {
+      font-size: var(--kegel-11);
+    }
   }
 }

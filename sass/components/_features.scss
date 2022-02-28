@@ -8,7 +8,10 @@
 
 .feature {
   display: flex;
-  min-height: 45rem;
+  flex-direction: row;
+  @include mq(md) {
+    flex-direction: column;
+  }
   position: relative;
 
   .subtitle {
@@ -29,7 +32,6 @@
   }
 
   &__img {
-    position: absolute;
     width: 100%;
     top: 0;
     max-width: 40rem;

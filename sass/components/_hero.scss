@@ -14,10 +14,12 @@
   }
 
   &__content {
-    flex: 0 50%;
+    flex: 1;
   }
 
   &__img {
+    flex: 1;
+
     img {
       width: 100%;
     }

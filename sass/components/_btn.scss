@@ -10,14 +10,25 @@
   box-shadow: inset 0px -4px 1px rgba(0, 0, 0, 0.6);
   transition: background-color 0.2s ease-out, color 0.2s ease-out,
     border 0.2s ease-out, box-shadow 0.2s ease-out;
+
+  @include mq(sm) {
+    font-size: var(--kegel-4);
+  }
 }
 
 .btn--big {
   padding: var(--kegel-7) var(--kegel-15);
+  @include mq(sm) {
+    padding: var(--kegel-5) var(--kegel-11);
+  }
 }
 
 .btn--small {
   padding: var(--kegel-5) var(--kegel-11);
+
+  @include mq(sm) {
+    padding: var(--kegel-3) var(--kegel-7);
+  }
 }
 
 .btn--white {

@@ -5,31 +5,36 @@
   max-width: 120rem;
   margin-inline: auto;
   padding-block: var(--kegel-8);
-  display: flex;
+  display: grid;
   align-items: center;
   gap: var(--kegel-7);
-  flex-wrap: wrap;
+  grid-template-areas: "logo buttons burger";
+  grid-template-columns: 1fr auto auto;
 
   @include mq(md) {
-    justify-content: space-between;
+    grid-template-areas:
+      "logo burger"
+      "buttons buttons";
   }
 
   &__logo {
-    @include mq(lg) {
-      font-size: var(--kegel-12);
-    }
+    grid-area: logo;
   }
 
   &__lang {
     cursor: pointer;
-    font-size: var(--kegel-9);
     border: none;
     background-color: $color-white;
     font-family: inherit;
     outline: none;
+    font-size: var(--kegel-9);
+    @include mq(md) {
+      font-size: var(--kegel-7);
+    }
   }
 
   &__buttons {
+    grid-area: buttons;
     display: flex;
     gap: var(--kegel-7);
     justify-content: center;
@@ -37,14 +42,18 @@
     margin-left: auto;
     @include mq(md) {
       margin-left: 0;
-      flex: 1;
     }
   }
 
   &__burger {
-    order: 1;
+    justify-self: end;
+    grid-area: burger;
     width: var(--kegel-15);
     height: var(--kegel-15);
+    @include mq(sm) {
+      width: var(--kegel-13);
+      height: var(--kegel-13);
+    }
     transition: transform 0.3s ease, color 0.3s ease;
     border: none;
     background-color: transparent;
@@ -53,9 +62,6 @@
       transform: scale(1.3);
       cursor: pointer;
       color: $color-gold;
-    }
-    @include mq(md) {
-      order: 0;
     }
   }
 }
