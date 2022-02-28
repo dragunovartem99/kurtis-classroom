@@ -78,7 +78,7 @@
       rgba($color-blue, 1),
       rgba($color-lightblue, 0.7)
     ),
-    url(/img/cards-slider/card-pencils.jpeg) bottom/cover;
+    url(img/cards-slider/card-pencils.jpeg) bottom/cover;
   z-index: 0;
   &::after {
     border-radius: inherit;
@@ -96,7 +96,7 @@
 
 .card--pencil {
   position: relative;
-  background: url(/img/cards-slider/card-pencil.jpeg) right/cover;
+  background: url(img/cards-slider/card-pencil.jpeg) right/cover;
   z-index: 0;
   &::after {
     border-radius: inherit;

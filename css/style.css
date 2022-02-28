@@ -770,6 +770,9 @@
     grid-column: span 2;
   }
 }
+.target__link:hover {
+  color: #ffc43b;
+}
 .target__icon {
   display: flex;
   justify-content: center;
@@ -966,7 +969,7 @@
 
 .card--pencils {
   position: relative;
-  background: linear-gradient(to right, #3a5aff, rgba(60, 197, 255, 0.7)), url(/img/cards-slider/card-pencils.jpeg) bottom/cover;
+  background: linear-gradient(to right, #3a5aff, rgba(60, 197, 255, 0.7)), url(img/cards-slider/card-pencils.jpeg) bottom/cover;
   z-index: 0;
 }
 .card--pencils::after {
@@ -984,7 +987,7 @@
 
 .card--pencil {
   position: relative;
-  background: url(/img/cards-slider/card-pencil.jpeg) right/cover;
+  background: url(img/cards-slider/card-pencil.jpeg) right/cover;
   z-index: 0;
 }
 .card--pencil::after {
