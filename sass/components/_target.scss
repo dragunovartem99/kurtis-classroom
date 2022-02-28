@@ -9,27 +9,31 @@
   padding-block: var(--space-1);
 
   &__items {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-bottom: var(--kegel-15);
     gap: var(--space-5);
+    @include mq(lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     @include mq(md) {
-      flex-direction: column;
       gap: var(--kegel-15);
+    }
+
+    @include mq(sm) {
+      grid-template-columns: 1fr;
     }
   }
 
   &__item {
-    flex: 1;
     gap: var(--kegel-5);
-    min-height: var(--space-14);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @include mq(md) {
+    @include mq(lg) {
       display: grid;
       grid-template-columns: auto 1fr;
-      min-height: 0;
       align-items: center;
     }
   }
@@ -48,7 +52,8 @@
     font-size: var(--kegel-5);
     line-height: var(--height-7);
     color: var(--oc-gray-7);
-    @include mq(md) {
+    margin-bottom: var(--kegel-7);
+    @include mq(lg) {
       grid-column: span 2;
     }
   }
@@ -59,7 +64,7 @@
     text-decoration: none;
     color: var(--oc-gray-8);
     margin-top: auto;
-    @include mq(md) {
+    @include mq(lg) {
       grid-column: span 2;
     }
     &:hover {
@@ -75,7 +80,7 @@
     height: var(--kegel-15);
     border-radius: 40%;
     margin-bottom: var(--kegel-7);
-    @include mq(md) {
+    @include mq(lg) {
       width: var(--space-1);
       height: var(--space-1);
       margin-bottom: 0;
