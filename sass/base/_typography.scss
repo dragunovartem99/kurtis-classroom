@@ -27,6 +27,10 @@ body {
   font-weight: var(--weight-8);
   text-align: center;
   color: var(--oc-gray-8);
+
+  @include mq(sm) {
+    font-size: var(--kegel-10);
+  }
 }
 
 .subtitle--dash {
