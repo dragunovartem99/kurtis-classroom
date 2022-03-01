@@ -54,7 +54,7 @@
   margin-bottom: var(--kegel-15);
 
   &__logo .logo__heading {
-    color: $color-white;
+    color: var(--oc-white);
   }
 
   &__content {
@@ -76,8 +76,8 @@
     text-decoration: none;
 
     &:hover {
-      color: #333333;
-      font-weight: 600;
+      // color: var(--oc-gray-8);
+      text-decoration: underline;
     }
   }
 
@@ -88,15 +88,15 @@
       padding: var(--kegel-9) var(--kegel-11);
       font-weight: var(--weight-7);
       font-size: var(--kegel-10);
-      color: $color-lightgrey;
+      color: var(--oc-gray-6);
       border-radius: var(--kegel-15);
       transition: all 0.3 ease;
     }
 
     &:hover,
     &:active {
-      font-family: monospace;
-      letter-spacing: -0.15rem;
+      // font-family: monospace;
+      // letter-spacing: -0.15rem;
       color: $color-gold;
       background-color: $color-darkbrown;
       box-shadow: inset 0px -4px 1px rgba(255, 255, 255, 1);

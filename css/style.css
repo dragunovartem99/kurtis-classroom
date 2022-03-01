@@ -509,7 +509,7 @@
   margin-bottom: var(--kegel-15);
 }
 .game__logo .logo__heading {
-  color: #fff;
+  color: var(--oc-white);
 }
 .game__content {
   padding-block: var(--space-10);
@@ -529,21 +529,18 @@
   text-decoration: none;
 }
 .game__trial:hover {
-  color: #333333;
-  font-weight: 600;
+  text-decoration: underline;
 }
 .game__btn:link, .game__btn:visited {
   background-color: var(--oc-white);
   padding: var(--kegel-9) var(--kegel-11);
   font-weight: var(--weight-7);
   font-size: var(--kegel-10);
-  color: #979797;
+  color: var(--oc-gray-6);
   border-radius: var(--kegel-15);
   transition: all 0.3 ease;
 }
 .game__btn:hover, .game__btn:active {
-  font-family: monospace;
-  letter-spacing: -0.15rem;
   color: #ffc43b;
   background-color: #2f281e;
   box-shadow: inset 0px -4px 1px white;
@@ -708,7 +705,7 @@
 }
 @media only screen and (max-width: 30em) {
   .logo__heading {
-    font-size: var(--kegel-11);
+    font-size: var(--kegel-13);
   }
 }
 
