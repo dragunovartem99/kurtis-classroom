@@ -889,15 +889,16 @@
 }
 .testimonial__img {
   position: absolute;
-  top: 5rem;
-  right: 5rem;
+  top: 0;
+  right: 0;
+  transform: translate(-25%, 25%);
   border-radius: 50%;
   overflow: hidden;
 }
 @media only screen and (max-width: 48em) {
   .testimonial__img {
     position: static;
-    max-width: 30rem;
+    transform: none;
   }
 }
 .testimonial__img img {
@@ -905,7 +906,7 @@
   display: block;
 }
 .testimonial__content {
-  padding-left: 5rem;
+  padding-left: var(--kegel-15);
   border-left: 0.1rem #fff solid;
 }
 @media only screen and (max-width: 48em) {
@@ -961,7 +962,7 @@
 }
 @media only screen and (max-width: 64em) {
   .testimonial__quote {
-    min-width: 35rem;
+    min-width: var(--space-15);
   }
 }
 @media only screen and (max-width: 48em) {
@@ -985,8 +986,8 @@
   content: "";
   display: block;
   background-color: #fff;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: var(--kegel-5);
+  height: var(--kegel-5);
   border-radius: 50%;
   position: absolute;
   bottom: 0;

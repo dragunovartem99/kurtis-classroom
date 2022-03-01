@@ -28,14 +28,15 @@
 
   &__img {
     position: absolute;
-    top: 5rem;
-    right: 5rem;
+    top: 0;
+    right: 0;
+    transform: translate(-25%, 25%);
     border-radius: 50%;
     overflow: hidden;
 
     @include mq(md) {
       position: static;
-      max-width: 30rem;
+      transform: none;
     }
 
     img {
@@ -45,7 +46,7 @@
   }
 
   &__content {
-    padding-left: 5rem;
+    padding-left: var(--kegel-15);
     border-left: 0.1rem $color-white solid;
     @include mq(md) {
       padding-left: 0;
@@ -100,7 +101,7 @@
   z-index: 1;
 
   @include mq(lg) {
-    min-width: 35rem;
+    min-width: var(--space-15);
   }
 
   @include mq(md) {
@@ -131,8 +132,8 @@
     content: "";
     display: block;
     background-color: $color-white;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: var(--kegel-5);
+    height: var(--kegel-5);
     border-radius: 50%;
     position: absolute;
     bottom: 0;
