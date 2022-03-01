@@ -967,7 +967,7 @@
 }
 @media only screen and (max-width: 48em) {
   .testimonial__quote {
-    transform: translate(2.5rem, -5rem);
+    transform: translate(1.5rem, -5rem);
   }
 }
 .testimonial__quote::before {
