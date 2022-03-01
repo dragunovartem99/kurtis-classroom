@@ -1,13 +1,16 @@
 @use "../abstracts" as *;
 
-.game-w {
+.game__main {
   background-color: $color-gold;
 }
 
 .game__header {
   text-align: center;
   font-size: var(--kegel-9);
-  font-weight: var(--weight-medium);
+  font-weight: var(--weight-5);
+  @include mq(sm) {
+    font-size: var(--kegel-7);
+  }
 
   .subtitle {
     margin-bottom: var(--kegel-5);
@@ -17,6 +20,10 @@
 .game__footer {
   text-align: center;
   font-size: var(--kegel-12);
+
+  @include mq(sm) {
+    font-size: var(--kegel-10);
+  }
 
   p {
     display: inline;
@@ -43,7 +50,7 @@
 .game {
   display: flex;
   flex-direction: column;
-  gap: var(--kegel-11);
+  gap: var(--kegel-10);
   margin-bottom: var(--kegel-15);
 
   &__logo .logo__heading {
@@ -52,54 +59,47 @@
 
   &__content {
     padding-block: var(--space-10);
-    gap: var(--kegel-5);
+    gap: var(--kegel-10);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .btn {
-      &:link,
-      &:visited {
-        width: 372px;
-        height: 73px;
-        background-color: $color-white;
-        padding: 20px;
-        /* letter-spacing: -0.3px; */
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 29px;
-        color: $color-lightgrey;
-        box-shadow: none;
-        border-radius: 3em;
-        transition: none;
-      }
-
-      &:hover,
-      &:active {
-        font-family: monospace;
-        letter-spacing: -1.7px;
-        color: #ffc43b;
-        text-decoration: none;
-        background-color: $color-darkbrown;
-        border: none;
-        box-shadow: inset 0px -4px 1px rgba(255, 255, 255, 1);
-      }
-    }
   }
 
-  &__try {
+  &__trial {
     display: block;
     font-family: Montserrat;
     font-size: var(--kegel-7);
-    color: var(--oc-gray-6);
+    color: var(--oc-gray-7);
+    font-weight: var(--weight-5);
     text-align: center;
     text-decoration: none;
 
     &:hover {
       color: #333333;
       font-weight: 600;
+    }
+  }
+
+  &__btn {
+    &:link,
+    &:visited {
+      background-color: var(--oc-white);
+      padding: var(--kegel-9) var(--kegel-11);
+      font-weight: var(--weight-7);
+      font-size: var(--kegel-10);
+      color: $color-lightgrey;
+      border-radius: var(--kegel-15);
+      transition: all 0.3 ease;
+    }
+
+    &:hover,
+    &:active {
+      font-family: monospace;
+      letter-spacing: -0.15rem;
+      color: $color-gold;
+      background-color: $color-darkbrown;
+      box-shadow: inset 0px -4px 1px rgba(255, 255, 255, 1);
     }
   }
 }

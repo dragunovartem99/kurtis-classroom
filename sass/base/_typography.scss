@@ -6,8 +6,12 @@ html {
     font-size: 60%;
   }
 
-  @include mq(sm) {
+  @include mq(md) {
     font-size: 56.25%;
+  }
+
+  @include mq(sm) {
+    font-size: 50%;
   }
 }
 
