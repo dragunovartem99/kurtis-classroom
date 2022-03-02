@@ -1294,6 +1294,7 @@ body {
 .header {
   max-width: 120rem;
   margin-inline: auto;
+  padding-inline: var(--kegel-5);
   padding-block: var(--kegel-8);
   display: grid;
   align-items: center;
@@ -1303,11 +1304,26 @@ body {
 }
 @media only screen and (max-width: 48em) {
   .header {
-    grid-template-areas: "logo burger" "buttons buttons";
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "logo burger";
+    background-color: #3a5aff;
+    margin-bottom: var(--kegel-10);
   }
 }
 .header__logo {
   grid-area: logo;
+}
+@media only screen and (max-width: 48em) {
+  .header__logo .logo__heading {
+    color: var(--oc-white);
+  }
+  .header__logo .logo__img {
+    background-image: url(../img/game/logo-white.png);
+    background-size: cover;
+  }
+  .header__logo .logo__img img {
+    visibility: hidden;
+  }
 }
 .header__lang {
   cursor: pointer;
@@ -1319,7 +1335,7 @@ body {
 }
 @media only screen and (max-width: 48em) {
   .header__lang {
-    font-size: var(--kegel-7);
+    display: none;
   }
 }
 .header__buttons {
@@ -1332,6 +1348,7 @@ body {
 @media only screen and (max-width: 48em) {
   .header__buttons {
     margin-left: 0;
+    display: none;
   }
 }
 .header__burger {
@@ -1343,6 +1360,11 @@ body {
   border: none;
   background-color: transparent;
   color: #3a5aff;
+}
+@media only screen and (max-width: 48em) {
+  .header__burger {
+    color: var(--oc-white);
+  }
 }
 @media only screen and (max-width: 30em) {
   .header__burger {

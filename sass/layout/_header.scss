@@ -4,6 +4,7 @@
 .header {
   max-width: 120rem;
   margin-inline: auto;
+  padding-inline: var(--kegel-5);
   padding-block: var(--kegel-8);
   display: grid;
   align-items: center;
@@ -12,13 +13,30 @@
   grid-template-columns: 1fr auto auto;
 
   @include mq(md) {
-    grid-template-areas:
-      "logo burger"
-      "buttons buttons";
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "logo burger";
+    // "buttons buttons";
+    background-color: $color-blue;
+    margin-bottom: var(--kegel-10);
   }
 
   &__logo {
     grid-area: logo;
+
+    @include mq(md) {
+      .logo__heading {
+        color: var(--oc-white);
+      }
+
+      .logo__img {
+        background-image: url(../img/game/logo-white.png);
+        background-size: cover;
+
+        img {
+          visibility: hidden;
+        }
+      }
+    }
   }
 
   &__lang {
@@ -29,7 +47,7 @@
     outline: none;
     font-size: var(--kegel-9);
     @include mq(md) {
-      font-size: var(--kegel-7);
+      display: none;
     }
   }
 
@@ -38,10 +56,10 @@
     display: flex;
     gap: var(--kegel-7);
     justify-content: center;
-
     margin-left: auto;
     @include mq(md) {
       margin-left: 0;
+      display: none;
     }
   }
 
@@ -50,6 +68,9 @@
     grid-area: burger;
     width: var(--kegel-15);
     height: var(--kegel-15);
+    @include mq(md) {
+      color: var(--oc-white);
+    }
     @include mq(sm) {
       width: var(--kegel-13);
       height: var(--kegel-13);
