@@ -82,6 +82,7 @@
   }
 
   &__btn {
+    &,
     &:link,
     &:visited {
       background-color: var(--oc-white);
@@ -90,7 +91,6 @@
       color: var(--oc-gray-6);
       border-radius: var(--kegel-15);
       transition: all 0.3 ease;
-
       @include mq(sm) {
         font-size: var(--kegel-8);
       }

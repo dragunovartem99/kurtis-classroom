@@ -528,7 +528,7 @@
 .game__trial:hover {
   text-decoration: underline;
 }
-.game__btn:link, .game__btn:visited {
+.game__btn, .game__btn:link, .game__btn:visited {
   background-color: var(--oc-white);
   font-weight: var(--weight-7);
   font-size: var(--kegel-10);
@@ -537,7 +537,7 @@
   transition: all 0.3 ease;
 }
 @media only screen and (max-width: 30em) {
-  .game__btn:link, .game__btn:visited {
+  .game__btn, .game__btn:link, .game__btn:visited {
     font-size: var(--kegel-8);
   }
 }
@@ -630,7 +630,7 @@
   padding-block: var(--space-1);
   display: flex;
   justify-content: space-between;
-  gap: var(--kegel-9);
+  gap: var(--kegel-10);
 }
 @media only screen and (max-width: 48em) {
   .stats {
@@ -640,12 +640,19 @@
 .stats .stats__item {
   flex: 1;
   font-weight: var(--weight-8);
-  font-size: var(--kegel-5);
+  font-size: var(--kegel-6);
   color: var(--oc-gray-8);
-  padding: 0.3px 0px 0.3px 5px;
+  padding-block: 0.3rem;
+  padding-left: 0.6rem;
   border-left-width: 4px;
   border-left-style: solid;
   transition: background-color ease-out 0.4s, color ease-out 0.4s, transform 0.4s 0.3s;
+}
+@media only screen and (max-width: 48em) {
+  .stats .stats__item {
+    font-size: var(--kegel-7);
+    padding-block: var(--kegel-1);
+  }
 }
 .stats .stats__item:hover {
   color: #fff;
