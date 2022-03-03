@@ -11,24 +11,15 @@
   transition: background-color 0.2s ease-out, color 0.2s ease-out,
     border 0.2s ease-out, box-shadow 0.2s ease-out;
 
-  @include mq(sm) {
-    font-size: var(--kegel-4);
-  }
+  padding: 1em 2em;
 }
 
 .btn--big {
-  padding: var(--kegel-7) var(--kegel-15);
-  @include mq(sm) {
-    padding: var(--kegel-5) var(--kegel-11);
-  }
+  padding: 1.5em 3em;
 }
 
 .btn--small {
-  padding: var(--kegel-5) var(--kegel-11);
-
-  @include mq(sm) {
-    padding: var(--kegel-3) var(--kegel-7);
-  }
+  padding: 1em 2em;
 }
 
 .btn--white {

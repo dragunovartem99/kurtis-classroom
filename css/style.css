@@ -353,29 +353,15 @@
   border-radius: 0.5rem;
   box-shadow: inset 0px -4px 1px rgba(0, 0, 0, 0.6);
   transition: background-color 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out, box-shadow 0.2s ease-out;
-}
-@media only screen and (max-width: 30em) {
-  .btn {
-    font-size: var(--kegel-4);
-  }
+  padding: 1em 2em;
 }
 
 .btn--big {
-  padding: var(--kegel-7) var(--kegel-15);
-}
-@media only screen and (max-width: 30em) {
-  .btn--big {
-    padding: var(--kegel-5) var(--kegel-11);
-  }
+  padding: 1.5em 3em;
 }
 
 .btn--small {
-  padding: var(--kegel-5) var(--kegel-11);
-}
-@media only screen and (max-width: 30em) {
-  .btn--small {
-    padding: var(--kegel-3) var(--kegel-7);
-  }
+  padding: 1em 2em;
 }
 
 .btn--white:link, .btn--white:visited {
@@ -544,12 +530,16 @@
 }
 .game__btn:link, .game__btn:visited {
   background-color: var(--oc-white);
-  padding: var(--kegel-9) var(--kegel-11);
   font-weight: var(--weight-7);
   font-size: var(--kegel-10);
   color: var(--oc-gray-6);
   border-radius: var(--kegel-15);
   transition: all 0.3 ease;
+}
+@media only screen and (max-width: 30em) {
+  .game__btn:link, .game__btn:visited {
+    font-size: var(--kegel-8);
+  }
 }
 .game__btn:hover, .game__btn:active {
   color: #ffc43b;

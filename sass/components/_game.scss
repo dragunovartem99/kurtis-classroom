@@ -85,12 +85,15 @@
     &:link,
     &:visited {
       background-color: var(--oc-white);
-      padding: var(--kegel-9) var(--kegel-11);
       font-weight: var(--weight-7);
       font-size: var(--kegel-10);
       color: var(--oc-gray-6);
       border-radius: var(--kegel-15);
       transition: all 0.3 ease;
+
+      @include mq(sm) {
+        font-size: var(--kegel-8);
+      }
     }
 
     &:hover,
