@@ -4,8 +4,7 @@
 .header {
   max-width: 120rem;
   margin-inline: auto;
-  padding-inline: var(--kegel-5);
-  padding-block: var(--kegel-8);
+  padding: var(--kegel-8) var(--kegel-8);
   display: grid;
   align-items: center;
   gap: var(--kegel-7);
@@ -15,9 +14,10 @@
   @include mq(md) {
     grid-template-columns: 1fr auto;
     grid-template-areas: "logo burger";
-    // "buttons buttons";
-    background-color: $color-blue;
+    background-image: linear-gradient(to right, $color-blue, #405ce7);
     margin-bottom: var(--kegel-10);
+    padding: var(--kegel-4) var(--kegel-8);
+    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.1);
   }
 
   &__logo {
@@ -45,7 +45,7 @@
     background-color: $color-white;
     font-family: inherit;
     outline: none;
-    font-size: var(--kegel-9);
+    font-size: var(--kegel-7);
     @include mq(md) {
       display: none;
     }
@@ -66,21 +66,21 @@
   &__burger {
     justify-self: end;
     grid-area: burger;
-    width: var(--kegel-15);
-    height: var(--kegel-15);
+    width: var(--kegel-14);
+    height: var(--kegel-14);
     @include mq(md) {
       color: var(--oc-white);
     }
-    @include mq(sm) {
-      width: var(--kegel-13);
-      height: var(--kegel-13);
-    }
+    // @include mq(sm) {
+    //   width: var(--kegel-13);
+    //   height: var(--kegel-13);
+    // }
     transition: transform 0.3s ease, color 0.3s ease;
     border: none;
     background-color: transparent;
     color: $color-blue;
     &:hover {
-      transform: scale(1.3);
+      transform: scale(1.1);
       cursor: pointer;
       color: $color-gold;
     }

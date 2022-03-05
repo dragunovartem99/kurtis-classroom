@@ -32,9 +32,6 @@
 
   &__main {
     flex: 0 0 30rem;
-    @include mq(md) {
-      order: 1;
-    }
   }
 
   .getapp {

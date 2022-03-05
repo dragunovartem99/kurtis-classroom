@@ -361,7 +361,7 @@
 }
 
 .btn--small {
-  padding: 1em 2em;
+  padding: 0.75em 1.5em;
 }
 
 .btn--white:link, .btn--white:visited {
@@ -384,21 +384,39 @@
   box-shadow: inset 0px -4px 1px rgba(0, 0, 0, 0.6);
 }
 
-.call-to-action {
+.cta {
   padding-block: var(--space-1);
-  min-height: 40rem;
   display: flex;
-  justify-content: flex-end;
-  background-position: 0% 40%;
-  background-repeat: no-repeat;
-  background-size: 450px;
-  background-image: url(../img/call-to-action/student-hand-up.png);
+  gap: var(--space-1);
+  justify-content: space-between;
 }
-.call-to-action__content {
-  width: 50%;
+.cta__content {
+  flex: 3;
 }
-.call-to-action .headline {
+@media only screen and (max-width: 48em) {
+  .cta__content {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .cta {
+    flex-direction: column;
+  }
+}
+.cta .headline {
   margin-bottom: var(--kegel-15);
+}
+.cta__img {
+  flex: 2;
+  text-align: center;
+}
+.cta__img img {
+  width: 100%;
+}
+@media only screen and (max-width: 48em) {
+  .cta__img img {
+    width: 50%;
+  }
 }
 
 .features {
@@ -445,6 +463,11 @@
   font-size: var(--kegel-9);
   line-height: var(--height-5);
 }
+@media only screen and (max-width: 48em) {
+  .feature__descr {
+    font-size: var(--kegel-7);
+  }
+}
 
 @media only screen and (max-width: 48em) {
   .feature,
@@ -475,11 +498,11 @@
 
 .game__footer {
   text-align: center;
-  font-size: var(--kegel-12);
+  font-size: var(--kegel-10);
 }
 @media only screen and (max-width: 30em) {
   .game__footer {
-    font-size: var(--kegel-10);
+    font-size: var(--kegel-8);
   }
 }
 .game__footer p {
@@ -516,9 +539,13 @@
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 48em) {
+  .game__content {
+    padding-block: var(--space-5);
+  }
+}
 .game__trial {
   display: block;
-  font-family: Montserrat;
   font-size: var(--kegel-7);
   color: var(--oc-gray-7);
   font-weight: var(--weight-5);
@@ -531,7 +558,7 @@
 .game__btn, .game__btn:link, .game__btn:visited {
   background-color: var(--oc-white);
   font-weight: var(--weight-7);
-  font-size: var(--kegel-10);
+  font-size: var(--kegel-8);
   color: var(--oc-gray-6);
   border-radius: var(--kegel-15);
   transition: all 0.3 ease;
@@ -599,13 +626,7 @@
   }
 }
 .hero .headline {
-  margin-bottom: var(--kegel-15);
-}
-@media only screen and (max-width: 48em) {
-  .hero .headline {
-    margin-bottom: var(--kegel-10);
-    font-size: var(--kegel-12);
-  }
+  margin-bottom: 0.75em;
 }
 .hero__text {
   font-size: var(--kegel-8);
@@ -1019,6 +1040,7 @@
   position: relative;
   border-radius: var(--kegel-10);
   padding: var(--kegel-15) var(--kegel-10) var(--kegel-10);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 .card:hover {
@@ -1181,9 +1203,19 @@ body {
 
 .headline {
   font-weight: var(--weight-8);
-  font-size: var(--space-2);
-  line-height: var(--height-3);
+  font-size: var(--space-1);
+  line-height: var(--height-1);
   color: var(--oc-gray-9);
+}
+@media only screen and (max-width: 64em) {
+  .headline {
+    font-size: var(--kegel-15);
+  }
+}
+@media only screen and (max-width: 30em) {
+  .headline {
+    font-size: var(--kegel-13);
+  }
 }
 
 .subtitle {
@@ -1242,11 +1274,6 @@ body {
 .footer__main {
   flex: 0 0 30rem;
 }
-@media only screen and (max-width: 48em) {
-  .footer__main {
-    order: 1;
-  }
-}
 .footer .getapp {
   margin-bottom: var(--kegel-15);
 }
@@ -1291,8 +1318,7 @@ body {
 .header {
   max-width: 120rem;
   margin-inline: auto;
-  padding-inline: var(--kegel-5);
-  padding-block: var(--kegel-8);
+  padding: var(--kegel-8) var(--kegel-8);
   display: grid;
   align-items: center;
   gap: var(--kegel-7);
@@ -1303,8 +1329,10 @@ body {
   .header {
     grid-template-columns: 1fr auto;
     grid-template-areas: "logo burger";
-    background-color: #3a5aff;
+    background-image: linear-gradient(to right, #3a5aff, #405ce7);
     margin-bottom: var(--kegel-10);
+    padding: var(--kegel-4) var(--kegel-8);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   }
 }
 .header__logo {
@@ -1328,7 +1356,7 @@ body {
   background-color: #fff;
   font-family: inherit;
   outline: none;
-  font-size: var(--kegel-9);
+  font-size: var(--kegel-7);
 }
 @media only screen and (max-width: 48em) {
   .header__lang {
@@ -1351,8 +1379,8 @@ body {
 .header__burger {
   justify-self: end;
   grid-area: burger;
-  width: var(--kegel-15);
-  height: var(--kegel-15);
+  width: var(--kegel-14);
+  height: var(--kegel-14);
   transition: transform 0.3s ease, color 0.3s ease;
   border: none;
   background-color: transparent;
@@ -1363,22 +1391,16 @@ body {
     color: var(--oc-white);
   }
 }
-@media only screen and (max-width: 30em) {
-  .header__burger {
-    width: var(--kegel-13);
-    height: var(--kegel-13);
-  }
-}
 .header__burger:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
   cursor: pointer;
   color: #ffc43b;
 }
 
 .container {
+  width: 90%;
   max-width: 110rem;
   margin-inline: auto;
-  padding-inline: var(--kegel-10);
 }
 
 /*# sourceMappingURL=style.css.map */

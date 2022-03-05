@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+// Call to Action
+
+.cta {
+  padding-block: var(--space-1);
+  display: flex;
+  gap: var(--space-1);
+  justify-content: space-between;
+
+  &__content {
+    flex: 3;
+    @include mq(md) {
+      text-align: center;
+    }
+  }
+
+  @include mq(md) {
+    flex-direction: column;
+  }
+
+  .headline {
+    margin-bottom: var(--kegel-15);
+  }
+
+  &__img {
+    flex: 2;
+    text-align: center;
+    img {
+      width: 100%;
+      @include mq(md) {
+        width: 50%;
+      }
+    }
+  }
+}

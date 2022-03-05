@@ -1,5 +1,10 @@
 @use "../abstracts" as *;
 
+// *::selection {
+//   background-color: $color-gold;
+//   color: #444;
+// }
+
 html {
   font-size: 62.5%;
   @include mq(lg) {
@@ -21,9 +26,17 @@ body {
 
 .headline {
   font-weight: var(--weight-8);
-  font-size: var(--space-2);
-  line-height: var(--height-3);
+  font-size: var(--space-1);
+  line-height: var(--height-1);
   color: var(--oc-gray-9);
+
+  @include mq(lg) {
+    font-size: var(--kegel-15);
+  }
+
+  @include mq(sm) {
+    font-size: var(--kegel-13);
+  }
 }
 
 .subtitle {
