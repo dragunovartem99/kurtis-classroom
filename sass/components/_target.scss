@@ -1,13 +1,8 @@
 @use "../abstracts" as *;
 
 // Target
-.target-w {
-  background-color: var(--oc-gray-1);
-}
 
 .target {
-  padding-block: var(--space-1);
-
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+// Space
+.section-hero,
+.section-target,
+.section-cards,
+.section-game,
+.section-features,
+.section-testimonials,
+.section-stats,
+.section-cta {
+  margin-block: var(--space-1);
+
+  @include mq(md) {
+    margin-block: var(--kegel-15);
+  }
+}
+
+.section-target,
+.section-testimonials,
+.section-stats {
+  padding-block: var(--space-1);
+  @include mq(md) {
+    padding-block: var(--kegel-15);
+  }
+}
+
+.section-stats {
+  @include mq(md) {
+    padding-block: var(--kegel-6);
+  }
+}
+
+// Colors
+.section-target {
+  background-color: var(--oc-gray-1);
+}
+
+.section-testimonials {
+  background-color: $color-blue;
+}

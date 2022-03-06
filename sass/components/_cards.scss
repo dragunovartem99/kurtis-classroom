@@ -1,9 +1,5 @@
 @use "../abstracts" as *;
 
-.section-cards {
-  padding-block: var(--space-1);
-}
-
 .cards {
   display: grid;
   gap: var(--kegel-8) var(--kegel-10);

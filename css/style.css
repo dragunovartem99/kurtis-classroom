@@ -385,7 +385,6 @@
 }
 
 .cta {
-  padding-block: var(--space-1);
   display: flex;
   gap: var(--space-1);
   justify-content: space-between;
@@ -420,7 +419,6 @@
 }
 
 .features {
-  padding-block: var(--space-1);
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
@@ -595,14 +593,7 @@
 }
 
 .hero {
-  padding-block: var(--space-4);
   display: flex;
-}
-@media only screen and (max-width: 48em) {
-  .hero {
-    padding-block: var(--kegel-10);
-    text-align: center;
-  }
 }
 @media only screen and (max-width: 48em) {
   .hero {
@@ -648,7 +639,6 @@
 }
 
 .stats {
-  padding-block: var(--space-1);
   display: flex;
   justify-content: space-between;
   gap: var(--kegel-10);
@@ -765,13 +755,6 @@
   transform: scale(1.1);
 }
 
-.target-w {
-  background-color: var(--oc-gray-1);
-}
-
-.target {
-  padding-block: var(--space-1);
-}
 .target__items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -883,7 +866,6 @@
 }
 
 .testimonial {
-  padding-block: var(--space-1);
   color: var(--oc-white);
 }
 .testimonial__layout {
@@ -1011,10 +993,6 @@
   bottom: 0;
   right: 0;
   transform: translate(-7.5rem, 200%);
-}
-
-.section-cards {
-  padding-block: var(--space-1);
 }
 
 .cards {
@@ -1401,6 +1379,56 @@ body {
   width: 90%;
   max-width: 110rem;
   margin-inline: auto;
+}
+
+.section-hero,
+.section-target,
+.section-cards,
+.section-game,
+.section-features,
+.section-testimonials,
+.section-stats,
+.section-cta {
+  margin-block: var(--space-1);
+}
+@media only screen and (max-width: 48em) {
+  .section-hero,
+.section-target,
+.section-cards,
+.section-game,
+.section-features,
+.section-testimonials,
+.section-stats,
+.section-cta {
+    margin-block: var(--kegel-15);
+  }
+}
+
+.section-target,
+.section-testimonials,
+.section-stats {
+  padding-block: var(--space-1);
+}
+@media only screen and (max-width: 48em) {
+  .section-target,
+.section-testimonials,
+.section-stats {
+    padding-block: var(--kegel-15);
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .section-stats {
+    padding-block: var(--kegel-6);
+  }
+}
+
+.section-target {
+  background-color: var(--oc-gray-1);
+}
+
+.section-testimonials {
+  background-color: #3a5aff;
 }
 
 /*# sourceMappingURL=style.css.map */
