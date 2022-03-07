@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 // Space
+.header,
 .section-hero,
 .section-target,
 .section-cards,
@@ -9,10 +10,10 @@
 .section-testimonials,
 .section-stats,
 .section-cta {
-  margin-block: var(--space-1);
+  margin-bottom: var(--space-1);
 
   @include mq(md) {
-    margin-block: var(--kegel-15);
+    margin-bottom: var(--kegel-15);
   }
 }
 
