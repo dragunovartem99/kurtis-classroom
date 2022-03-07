@@ -13,9 +13,7 @@
   &__buttons {
     display: flex;
     gap: var(--kegel-1);
-    @include mq(md) {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
   }
 
   &__button {
