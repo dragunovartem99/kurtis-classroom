@@ -7,12 +7,8 @@
   align-items: center;
   gap: var(--kegel-7);
 
-  @include mq(sm) {
-    gap: var(--kegel-4);
-  }
-
   &__img {
-    transform: translateY(-0.5rem);
+    transform: translateY(-20%);
     width: var(--kegel-14);
     height: var(--kegel-14);
 
@@ -30,7 +26,7 @@
     font-size: var(--kegel-14);
 
     @include mq(sm) {
-      font-size: var(--kegel-13);
+      font-size: var(--kegel-12);
     }
   }
 }

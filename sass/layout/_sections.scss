@@ -12,7 +12,7 @@
 .section-cta {
   margin-bottom: var(--space-1);
 
-  @include mq(md) {
+  @include mq(sm) {
     margin-bottom: var(--kegel-15);
   }
 }
@@ -21,7 +21,7 @@
 .section-testimonials,
 .section-stats {
   padding-block: var(--space-1);
-  @include mq(md) {
+  @include mq(sm) {
     padding-block: var(--kegel-15);
   }
 }

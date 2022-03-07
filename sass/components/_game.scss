@@ -64,7 +64,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include mq(md) {
+    @include mq(sm) {
       padding-block: var(--space-5);
     }
   }

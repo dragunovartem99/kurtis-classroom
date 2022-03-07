@@ -12,12 +12,14 @@
 
   &__buttons {
     display: flex;
-    flex-wrap: wrap;
     gap: var(--kegel-1);
+    @include mq(md) {
+      flex-wrap: wrap;
+    }
   }
 
   &__button {
-    height: var(--kegel-13);
+    width: var(--space-7);
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
     &:hover {

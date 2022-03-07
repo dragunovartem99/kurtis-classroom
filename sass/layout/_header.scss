@@ -11,19 +11,20 @@
   grid-template-areas: "logo buttons burger";
   grid-template-columns: 1fr auto auto;
 
-  @include mq(md) {
+  @include mq(sm) {
     grid-template-columns: 1fr auto;
     grid-template-areas: "logo burger";
-    background-image: linear-gradient(to right, $color-blue, #405ce7);
+    background-color: $color-blue;
     margin-bottom: var(--kegel-10);
-    padding: var(--kegel-4) var(--kegel-8);
+    padding-inline: var(--kegel-8);
+    padding-block: var(--kegel-8) var(--kegel-6);
     box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.1);
   }
 
   &__logo {
     grid-area: logo;
 
-    @include mq(md) {
+    @include mq(sm) {
       .logo__heading {
         color: var(--oc-white);
       }
@@ -46,7 +47,7 @@
     font-family: inherit;
     outline: none;
     font-size: var(--kegel-7);
-    @include mq(md) {
+    @include mq(sm) {
       display: none;
     }
   }
@@ -57,7 +58,7 @@
     gap: var(--kegel-7);
     justify-content: center;
     margin-left: auto;
-    @include mq(md) {
+    @include mq(sm) {
       margin-left: 0;
       display: none;
     }
@@ -68,13 +69,10 @@
     grid-area: burger;
     width: var(--kegel-14);
     height: var(--kegel-14);
-    @include mq(md) {
+    @include mq(sm) {
       color: var(--oc-white);
     }
-    // @include mq(sm) {
-    //   width: var(--kegel-13);
-    //   height: var(--kegel-13);
-    // }
+
     transition: transform 0.3s ease, color 0.3s ease;
     border: none;
     background-color: transparent;

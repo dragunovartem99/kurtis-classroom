@@ -8,15 +8,16 @@
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: var(--kegel-15);
     gap: var(--space-5);
+
     @include mq(lg) {
-      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-1);
     }
 
     @include mq(md) {
-      gap: var(--kegel-15);
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    @include mq(sm) {
+    @include mq(xs) {
       grid-template-columns: 1fr;
     }
   }

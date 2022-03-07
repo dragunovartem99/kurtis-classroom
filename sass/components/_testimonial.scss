@@ -1,16 +1,12 @@
 @use "../abstracts" as *;
 
-.testimonial-w {
-  background-color: $color-blue;
-}
-
 .testimonial {
   color: var(--oc-white);
 
   &__layout {
     display: flex;
 
-    @include mq(md) {
+    @include mq(sm) {
       flex-direction: column;
       gap: var(--kegel-10);
       align-items: center;
@@ -20,7 +16,7 @@
   &__graphics {
     position: relative;
     flex: 1 0 50%;
-    @include mq(md) {
+    @include mq(sm) {
       margin-top: var(--kegel-10);
     }
   }
@@ -33,7 +29,7 @@
     border-radius: 50%;
     overflow: hidden;
 
-    @include mq(md) {
+    @include mq(sm) {
       position: static;
       transform: none;
     }
@@ -47,7 +43,7 @@
   &__content {
     padding-left: var(--kegel-15);
     border-left: 0.1rem $color-white solid;
-    @include mq(md) {
+    @include mq(sm) {
       padding-left: 0;
       border-left: none;
     }
@@ -98,21 +94,21 @@
   padding-block: var(--kegel-5);
   min-width: 40rem;
   z-index: 1;
-
-  @include mq(lg) {
-    min-width: var(--space-15);
-  }
-
-  @include mq(md) {
-    transform: translate(1.5rem, -5rem);
-  }
-
   border-radius: var(--kegel-9);
   background-color: var(--oc-white);
   font-weight: var(--weight-7);
   font-size: var(--kegel-9);
   text-align: center;
   color: var(--oc-gray-8);
+
+  @include mq(md) {
+    min-width: var(--space-14);
+    font-size: var(--kegel-8);
+  }
+
+  @include mq(sm) {
+    transform: translate(1.5rem, -5rem);
+  }
 
   &::before {
     content: "";

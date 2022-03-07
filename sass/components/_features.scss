@@ -23,7 +23,7 @@
     img {
       width: 100%;
       // max-width: 40rem;
-      @include mq(md) {
+      @include mq(sm) {
         max-width: 30rem;
       }
     }
@@ -37,7 +37,7 @@
     text-align: left;
     margin-bottom: var(--kegel-8);
 
-    @include mq(md) {
+    @include mq(sm) {
       text-align: center;
     }
   }
@@ -48,6 +48,10 @@
     line-height: var(--height-5);
 
     @include mq(md) {
+      font-size: var(--kegel-8);
+    }
+
+    @include mq(xs) {
       font-size: var(--kegel-7);
     }
   }
@@ -55,7 +59,7 @@
 
 .feature,
 .feature--reverse {
-  @include mq(md) {
+  @include mq(sm) {
     flex-direction: column;
     align-items: center;
     gap: var(--kegel-8);

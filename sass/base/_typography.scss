@@ -11,11 +11,11 @@ html {
     font-size: 60%;
   }
 
-  @include mq(md) {
+  @include mq(sm) {
     font-size: 56.25%;
   }
 
-  @include mq(sm) {
+  @include mq(xs) {
     font-size: 50%;
   }
 }
@@ -52,6 +52,9 @@ body {
 
 .subtitle--dash {
   margin-bottom: var(--space-1);
+  @include mq(md) {
+    margin-bottom: var(--kegel-15);
+  }
   &::after {
     content: "";
     display: block;

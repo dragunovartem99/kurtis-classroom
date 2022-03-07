@@ -3,12 +3,15 @@
 //Hero
 .hero {
   display: flex;
-  @include mq(md) {
+  @include mq(sm) {
     flex-direction: column-reverse;
   }
 
   &__content {
     flex: 1;
+    @include mq(sm) {
+      text-align: center;
+    }
   }
 
   &__img {
@@ -32,8 +35,8 @@
     font-size: var(--kegel-8);
     color: var(--oc-gray-7);
     margin-bottom: var(--kegel-10);
-    @include mq(md) {
-      font-size: var(--kegel-5);
+    @include mq(sm) {
+      font-size: var(--kegel-6);
     }
   }
 
@@ -42,7 +45,7 @@
   }
 
   .getapp {
-    @include mq(md) {
+    @include mq(sm) {
       &__buttons {
         justify-content: center;
       }
