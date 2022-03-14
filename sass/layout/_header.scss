@@ -2,42 +2,29 @@
 
 //Header
 .header {
+  // Wide container
   max-width: 120rem;
+  width: 100%;
   margin-inline: auto;
-  padding: var(--kegel-8) var(--kegel-8);
-  display: grid;
-  align-items: center;
+
+  // Other
+  padding: var(--kegel-8) var(--kegel-5);
   gap: var(--kegel-7);
-  grid-template-areas: "logo buttons burger";
-  grid-template-columns: 1fr auto auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @include mq(sm) {
-    grid-template-columns: 1fr auto;
-    grid-template-areas: "logo burger";
-    background-color: $color-blue;
-    margin-bottom: var(--kegel-10);
-    padding-inline: var(--kegel-8);
-    padding-block: var(--kegel-8) var(--kegel-6);
-    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.1);
+    padding: var(--kegel-5) var(--kegel-3);
+    padding: var(--kegel-8) var(--kegel-5);
+    gap: var(--kegel-5);
   }
 
-  &__logo {
-    grid-area: logo;
-
-    @include mq(sm) {
-      .logo__heading {
-        color: var(--oc-white);
-      }
-
-      .logo__img {
-        background-image: url(../img/game/logo-white.png);
-        background-size: cover;
-
-        img {
-          visibility: hidden;
-        }
-      }
-    }
+  @include mq(xs) {
+    background-color: var(--oc-gray-8);
+    margin-bottom: var(--kegel-10);
+    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.1);
   }
 
   &__lang {
@@ -47,29 +34,33 @@
     font-family: inherit;
     outline: none;
     font-size: var(--kegel-7);
+
+    @include mq(md) {
+      font-size: var(--kegel-6);
+    }
     @include mq(sm) {
       display: none;
     }
   }
 
   &__buttons {
-    grid-area: buttons;
     display: flex;
     gap: var(--kegel-7);
-    justify-content: center;
     margin-left: auto;
     @include mq(sm) {
-      margin-left: 0;
+      gap: var(--kegel-3);
+    }
+
+    @include mq(xs) {
       display: none;
     }
   }
 
   &__burger {
-    justify-self: end;
-    grid-area: burger;
     width: var(--kegel-14);
     height: var(--kegel-14);
-    @include mq(sm) {
+
+    @include mq(xs) {
       color: var(--oc-white);
     }
 
@@ -81,6 +72,14 @@
       transform: scale(1.1);
       cursor: pointer;
       color: $color-gold;
+    }
+  }
+}
+
+.header__logo {
+  @include mq(xs) {
+    .logo__heading {
+      color: var(--oc-white);
     }
   }
 }

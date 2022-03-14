@@ -12,10 +12,6 @@
     border 0.2s ease-out, box-shadow 0.2s ease-out;
 
   padding: 1em 2em;
-
-  @include mq(sm) {
-    font-size: var(--kegel-6);
-  }
 }
 
 .btn--big {

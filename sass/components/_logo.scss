@@ -7,12 +7,21 @@
   align-items: center;
   gap: var(--kegel-7);
 
+  @include mq(sm) {
+    gap: var(--kegel-5);
+  }
+
   &__img {
     transform: translateY(-20%);
     width: var(--kegel-14);
     height: var(--kegel-14);
 
     @include mq(sm) {
+      width: var(--kegel-13);
+      height: var(--kegel-13);
+    }
+
+    @include mq(xs) {
       width: var(--kegel-12);
       height: var(--kegel-12);
     }
@@ -23,10 +32,14 @@
     font-family: Vibur, sans-serif;
     font-weight: var(--weight-5);
     color: var(--oc-gray-8);
-    font-size: var(--kegel-14);
+    font-size: var(--kegel-13);
 
     @include mq(sm) {
       font-size: var(--kegel-12);
+    }
+
+    @include mq(xs) {
+      font-size: var(--kegel-11);
     }
   }
 }
