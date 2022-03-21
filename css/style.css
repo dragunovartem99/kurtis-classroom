@@ -1062,7 +1062,7 @@
   border-radius: var(--kegel-10);
   padding: 0.5rem var(--kegel-1);
   font-weight: var(--weight-7);
-  font-size: var(--kegel-3);
+  font-size: var(--kegel-4);
 }
 .card__descr {
   line-height: var(--height-5);
@@ -1365,8 +1365,7 @@ body {
 }
 @media only screen and (max-width: 45em) {
   .header {
-    padding: var(--kegel-5) var(--kegel-3);
-    padding: var(--kegel-8) var(--kegel-5);
+    padding: var(--kegel-2) var(--kegel-5);
     gap: var(--kegel-5);
   }
 }

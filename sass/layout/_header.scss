@@ -16,8 +16,7 @@
   align-items: center;
 
   @include mq(sm) {
-    padding: var(--kegel-5) var(--kegel-3);
-    padding: var(--kegel-8) var(--kegel-5);
+    padding: var(--kegel-2) var(--kegel-5);
     gap: var(--kegel-5);
   }
 
