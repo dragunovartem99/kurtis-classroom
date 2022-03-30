@@ -6,7 +6,7 @@
   justify-content: space-between;
   gap: var(--kegel-10);
 
-  @include mq(md) {
+  @include mq(sm) {
     flex-direction: column;
   }
 
@@ -21,11 +21,6 @@
     border-left-style: solid;
     transition: background-color ease-out 0.4s, color ease-out 0.4s,
       transform 0.4s 0.3s;
-
-    @include mq(md) {
-      font-size: var(--kegel-7);
-      padding-block: var(--kegel-1);
-    }
 
     &:hover {
       color: $color-white;
@@ -61,6 +56,15 @@
 
       &:hover {
         background-color: $color-red;
+      }
+    }
+
+    @include mq(md) {
+      font-size: var(--kegel-6);
+      padding-block: var(--kegel-1);
+
+      &:hover {
+        transform: scale(1);
       }
     }
   }

@@ -9,12 +9,12 @@
 
   &__content {
     flex: 3;
-    @include mq(md) {
+    @include mq(sm) {
       text-align: center;
     }
   }
 
-  @include mq(md) {
+  @include mq(sm) {
     flex-direction: column;
   }
 
@@ -27,7 +27,7 @@
     text-align: center;
     img {
       width: 100%;
-      @include mq(md) {
+      @include mq(sm) {
         width: 50%;
       }
     }

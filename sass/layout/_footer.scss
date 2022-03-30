@@ -46,7 +46,7 @@
 
     @include mq(md) {
       grid-column: 1 / -1;
-      grid-template-columns: auto auto;
+      grid-template-columns: 1fr 1fr;
       column-gap: var(--kegel-12);
       row-gap: var(--kegel-12);
       border-bottom: 1px solid $color-white;
@@ -61,7 +61,7 @@
 
     @include mq(sm) {
       padding-bottom: var(--kegel-12);
-      column-gap: var(--kegel-5);
+      column-gap: var(--kegel-10);
       row-gap: var(--kegel-10);
     }
 

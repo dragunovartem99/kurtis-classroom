@@ -20,7 +20,7 @@
     gap: var(--kegel-5);
   }
 
-  @include mq(xs) {
+  @media only screen and (max-width: 37.5em) {
     background-color: var(--oc-gray-8);
     margin-bottom: var(--kegel-10);
     box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.1);
@@ -50,7 +50,7 @@
       gap: var(--kegel-3);
     }
 
-    @include mq(xs) {
+    @media only screen and (max-width: 37.5em) {
       display: none;
     }
   }
@@ -59,7 +59,7 @@
     width: var(--kegel-14);
     height: var(--kegel-14);
 
-    @include mq(xs) {
+    @media only screen and (max-width: 37.5em) {
       color: var(--oc-white);
     }
 
@@ -76,7 +76,7 @@
 }
 
 .header__logo {
-  @include mq(xs) {
+  @media only screen and (max-width: 37.5em) {
     .logo__heading {
       color: var(--oc-white);
     }
